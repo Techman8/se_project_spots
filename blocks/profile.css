@@ -8,6 +8,7 @@
   height: 190px;
   width: 190px;
   margin-right: 20px;
+  border-radius: 8px;
 }
 
 .profile__column {
@@ -25,6 +26,9 @@
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   max-width: 420px;
+  font-size: 32px;
+  line-height: 1;
+  color: #212121;
 }
 
 .profile__description {
@@ -33,34 +37,44 @@
   overflow: hidden;
   text-overflow: ellipsis;
   -webkit-line-clamp: 3;
-  line-clamp: 3;
   -webkit-box-orient: vertical;
   max-width: 420px;
+  font-size: 16px;
+  line-height: 1;
+  font-weight: 500;
+  color: #212121B2;
 }
 
 .profile__edit-btn {
   margin-top: auto;
-  background-color: white;
-  color: #000000;
-  opacity: 1;
+  color: #212121;
+  opacity: 0.7;
+  display: flex;
+  gap: 8px;
+  cursor: pointer;
 }
 
-.profile__edit-button:hover {
+.profile__edit-btn:hover {
   background-color: #212121;
   opacity: 0.8;
 }
 
 .profile__add-btn {
   margin-left: auto;
-  width: 137px;
+  width: 157px;
   padding: 0;
-  background-color: black;
-  color: white;
+  background-color: #212121;
+  color: #FCF5E5;
+  height: 52px;
+  border-radius: 8px;
+  display: flex;
+  gap: 8px;
+  cursor: pointer;
 }
 
 .profile__add-btn:hover {
   background-color: #2c2c2c;
-  color: white;
+  opacity: 0.8;
 }
 
 @media screen and (max-width: 630px) {
