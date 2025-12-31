@@ -47,7 +47,8 @@
 
 .profile__edit-btn {
   margin-top: auto;
-  color: #212121;
+  background-color: transparent;
+  border: none;
   opacity: 0.7;
   display: flex;
   gap: 8px;
@@ -60,7 +61,7 @@
 
 .profile__add-btn {
   margin-left: auto;
-  margin-top: 30px;
+  margin-top: auto;
   width: 157px;
   padding: 0;
   background-color: #212121;
@@ -117,5 +118,6 @@
   margin-left: 0;
   width: 100%;
   max-width: 288px;
+  margin-top: 20px;
 }
 }
