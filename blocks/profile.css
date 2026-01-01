@@ -46,13 +46,26 @@
 }
 
 .profile__edit-btn {
+   margin-top: auto;
+  color: #212121;
+  opacity: 0.7;
+  display: flex;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.profile__edit-btn {
   margin-top: auto;
-  background-color: transparent;
   border: none;
   opacity: 0.7;
   display: flex;
   gap: 8px;
   cursor: pointer;
+  font-family: "Poppins", Arial, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
+  background-color: transparent;
 }
 
 .profile__edit-btn:hover {
@@ -87,7 +100,7 @@
   }
 
   .profile__edit-btn {
-    margin-bottom: 20px;
+    margin-bottom: 2px;
   }
 
   .profile__avatar {
