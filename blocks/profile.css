@@ -15,6 +15,7 @@
   display: flex;
   flex-direction: column;
   margin-right: 20px;
+  align-items: start;
 }
 
 .profile__name {
@@ -43,15 +44,6 @@
   line-height: 1;
   font-weight: 500;
   color: #212121B2;
-}
-
-.profile__edit-btn {
-   margin-top: auto;
-  color: #212121;
-  opacity: 0.7;
-  display: flex;
-  gap: 8px;
-  cursor: pointer;
 }
 
 .profile__edit-btn {
@@ -104,33 +96,33 @@
   }
 
   .profile__avatar {
-  margin-bottom: 12px;
-  margin-right: 0;
-  height: 80px;
-  width: 80px;
-}
+    margin-bottom: 12px;
+    margin-right: 0;
+    height: 80px;
+    width: 80px;
+  }
 
   .profile__name {
-  font-size: 20px;
-  margin-bottom: 6px;
-  max-width: 288px;
-}
+    font-size: 20px;
+    margin-bottom: 6px;
+    max-width: 288px;
+  }
 
   .profile__description {
-  margin-bottom: 32px;
-  font-size: 16px;
-  max-width: 288px;
-}
+    margin-bottom: 32px;
+    font-size: 16px;
+    max-width: 288px;
+  }
 
   .profile__column {
-  margin-right: 0;
-  text-align: center;
-}
+    margin-right: 0;
+    align-items: center;
+  }
 
   .profile__add-btn {
-  margin-left: 0;
-  width: 100%;
-  max-width: 288px;
-  margin-top: 20px;
-}
+    margin-left: 0;
+    width: 100%;
+    max-width: 288px;
+    margin-top: 20px;
+  }
 }
