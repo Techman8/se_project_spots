@@ -22,6 +22,7 @@
 }
 
 .modal__container {
+  box-sizing: border-box;
   max-width: 730px;
   width: 100%;
   border-radius: 8px;
@@ -69,6 +70,8 @@
   font-family: 'Poppins', Arial, sans-serif;
   font-size: 20px;
   line-height: 1;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .modal__input:focus {
@@ -102,6 +105,10 @@
   .modal__container {
     margin: 0 12px;
     padding: 12px;
+  }
+
+  .modal__input {
+    font-size: 16px;
   }
 
   .modal__close-btn {

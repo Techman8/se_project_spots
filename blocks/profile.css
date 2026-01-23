@@ -78,6 +78,7 @@
   cursor: pointer;
   align-items: center;
   justify-content: center;
+  border: none;
 }
 
 .profile__add-btn:hover {

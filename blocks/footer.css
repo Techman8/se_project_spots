@@ -1,7 +1,7 @@
 .footer {
   display: flex;
   justify-content: center;
-  padding: 60px 0;
+  padding: 60px 20px;
   margin: 0;
 }
 
@@ -12,4 +12,10 @@
   font-weight: 400;
   color: #212121B2;
   margin: 0 auto;
+}
+
+@media screen and (max-width: 627px) {
+  .footer {
+    padding: 60px 16px;
+  }
 }
