@@ -51,7 +51,7 @@ const profileDescriptionEl = document.querySelector(".profile__description");
 const previewModal = document.querySelector("#preview-modal");
 const previewModalCloseBtn = previewModal.querySelector(".modal__close-btn");
 const previewImageEl = previewModal.querySelector(".modal__image");
-const previewModalTitle = previewModal.querySelector(".modal__title");
+const previewModalTitle = previewModal.querySelector(".modal__caption");
 
 const cardTemplate = document
 .querySelector("#card-template")
@@ -127,7 +127,7 @@ function handleAddCardSubmit(evt) {
 
   const cardElement = getCardElement(inputValues);
   cardsList.prepend(cardElement);
-
+  newPostForm.reset();
   closeModal(newPostModal);
 }
 

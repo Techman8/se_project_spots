@@ -50,7 +50,7 @@
 
 .modal__close-btn_type_preview {
   top: 0;
-  right: -52.5px;
+  right: 52.5px;
   background-image: url(../images/close-icon.svg);
   background-size: contain;
   background-repeat: no-repeat;
@@ -128,6 +128,21 @@
   object-fit: contain;
   display: block;
   border-radius: 8px;
+}
+
+.modal__container_type_preview {
+  background-color: transparent;
+  padding: 0;
+  max-width: 80vw;
+  max-height: 80vh;
+}
+
+.modal__caption {
+  color: #fff;
+  font-family: 'Poppins', Arial, sans-serif;
+  font-size: 16px;
+  margin-top: 8px;
+  text-align: center;
 }
 
 @media screen and (max-width: 480px) {
