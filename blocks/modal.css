@@ -57,7 +57,7 @@
   background-position:center;
 }
 
-.modal__close_type_preview:hover {
+.modal__close-btn_type_preview:hover {
   background-image: url(../images/close-icon-hover.svg);
 }
 
@@ -76,16 +76,8 @@
 }
 
 .modal__button_disabled {
-  width: 156px;
-  height: 52px;
-  opacity: 0.5;
-  gap: 8px;
-  border-radius: 8px;
-  padding-top: 18px;
-  padding-right: 32px;
-  padding-bottom: 18px;
-  padding-left: 32px;
-  background: rgba(33, 33, 33, 1);
+  opacity: 0.2;
+  cursor: not-allowed;
 }
 
 .modal__input {

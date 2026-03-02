@@ -30,7 +30,7 @@ const initialCards = [
   },
 ];
 
-const editProfileModal = document.querySelector ("#edit-profile-modal");
+const editProfileModal = document.querySelector("#edit-profile-modal");
 const editProfileBtn = document.querySelector(".profile__edit-btn");
 const editProfileCloseBtn = editProfileModal.querySelector(".modal__close-btn");
 const editProfileNameInput = editProfileModal.querySelector("#profile-name");
@@ -89,11 +89,38 @@ return cardElement;
 
 function openModal(modal) {
   modal.classList.add("modal_is-opened");
+  modal.addEventListener('click', closeOnOverlay);
 }
 
 function closeModal(modal) {
   modal.classList.remove("modal_is-opened");
+  modal.removeEventListener('click', closeOnOverlay);
 }
+
+function closeOnOverlay(evt) {
+  if (evt.target.classList.contains('modal')) {
+    closeModal(evt.target);
+  }
+}
+
+
+modal.addEventListener('click', closeOnOverlay);
+
+
+modal.removeEventListener('click', closeOnOverlay);
+
+function handleEscape(evt) {
+  if (evt.key === 'Escape') {
+    const opened = document.querySelector('.modal_is-opened');
+    if (opened) closeModal(opened);
+  }
+}
+
+// When opening modal:
+document.addEventListener('keydown', handleEscape);
+
+// When closing modal:
+document.removeEventListener('keydown', handleEscape);
 
 editProfileBtn.addEventListener("click", function () {
   editProfileNameInput.value = profileNameEl.textContent;
