@@ -29,10 +29,12 @@
   opacity: 0.4;
   transition: opacity 0.3s ease;
   cursor: pointer;
+  border-radius: 50%;
 }
 
 .card__delete-btn:hover{
   opacity: 1;
+  background-color: #ff6565;
 }
 
 .card__content {

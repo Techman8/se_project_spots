@@ -26,7 +26,7 @@
   box-sizing: border-box;
   max-width: 730px;
   width: 100%;
-  border-radius: 8px;
+  border-radius: 10px;
   background-color: #fff;
   padding: 32px 50px;
   position: relative;
@@ -38,7 +38,7 @@
   right: 50px;
   width: 40px;
   height: 40px;
-  background: url(../images/close-icon.svg);
+  background: url(../images/dark-close-icon.svg);
   border: none;
   cursor: pointer;
   background-color: transparent;
@@ -117,12 +117,10 @@
 .modal__error {
   display: block;
   margin-top: 8px;
-  color: #212121B2;
-  font-family: Poppins;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 100%;
-  text-transform: uppercase;
+  color: #ff0000b2;
+  font-family: 'Poppins', Arial, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
 }
 
 .modal__submit-btn {
@@ -161,11 +159,13 @@
   color: #fff;
   font-family: 'Poppins', Arial, sans-serif;
   font-size: 20px;
-  margin-top: 8px;
   font-weight: 500;
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 8px 12px;
   border-radius: 8px;
+  margin: 0;
+  padding: 4px 8px;
+  background-color: #212121;
+  margin-top: 10px;
+  width: fit-content;
 }
 
 @media screen and (max-width: 480px) {
