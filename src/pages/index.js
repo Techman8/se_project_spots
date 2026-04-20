@@ -8,6 +8,7 @@ import { enableValidation, settings } from "../scripts/validation.js";
 import {setButtonText} from "../utils/helpers";
 import { resetValidation } from "../scripts/validation.js";
 import Api from "../utils/Api.js";
+import { data } from "autoprefixer";
 
 const initialCards = [
   {
@@ -94,9 +95,12 @@ const profileAvatarEl = document.querySelector(".profile__avatar");
 // Delete form elements
 const deleteCardModal = document.querySelector("#delete-modal");
 const deleteCardCloseBtn = deleteCardModal.querySelector(".modal__close-btn");
-const deleteCardConfirmBtn = deleteCardModal.querySelector(".modal__submit-btn");
+const deleteCardConfirmBtn = deleteCardModal.querySelector(".modal__delete-btn");
+const deleteCardCancelBtn = deleteCardModal.querySelector(".modal__cancel-btn");
 const deleteForm = document.forms["deleteForm"];
 deleteForm.addEventListener("submit", handleDeleteSubmit);
+
+
 
 editAvatarBtn.addEventListener("click", function () {
   editAvatarLinkInput.value = profileAvatarEl.src;
@@ -106,6 +110,14 @@ editAvatarBtn.addEventListener("click", function () {
 
 editAvatarCloseBtn.addEventListener("click", function () {
   closeModal(editAvatarModal);
+});
+
+deleteCardCloseBtn.addEventListener("click", function () {
+  closeModal(deleteCardModal);
+});
+
+deleteCardCancelBtn.addEventListener("click", function () {
+  closeModal(deleteCardModal);
 });
 
 function handleEditAvatarSubmit(evt) {
@@ -194,9 +206,9 @@ function handleEscape(evt) {
   }
 }
 
-function handleDeleteCard(cardElement, CardId) {
+function handleDeleteCard(cardElement, data) {
   selectedCard = cardElement;
-  selectedCardId = CardId;
+  selectedCardId = data._id;
   openModal(deleteCardModal);
 }
 
