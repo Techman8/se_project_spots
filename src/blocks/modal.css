@@ -242,10 +242,3 @@ border-radius: 8px;
     font-size: 16px;
   }
 }
-
-@media (min-width: 768px) {
-    .modal__form {
-      flex-direction: row;
-      justify-content: space-evenly;
-    }
-}
