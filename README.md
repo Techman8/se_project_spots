@@ -16,7 +16,7 @@ An application built so users will be able to add and remove photos, like photos
  project and some challenges I faced while building it.
   - [NigelBattee-ProjectPitch-SpotsStage-9](https://www.loom.com/share/a408bf8f8ed641429e168cdbfd31176a), where I describe my 
  project and some challenges I faced while building it.
-
+ check out [this video](https://www.loom.com/share/497c4f0d2dac4ce0a9e60d260a7bb695), where i describe my project and the challenges i faced while building it.
   ## Deployment
 
   This webpage is deployed to Github pages
