@@ -85,11 +85,11 @@
   font-size: 16px;
   line-height: 1;
   font-weight: 500;
-  color: #212121B2;
+  color: #212121b2;
 }
 
 .profile__edit-btn {
-   margin-top: auto;
+  margin-top: auto;
   border: none;
   opacity: 0.7;
   display: flex;
@@ -112,7 +112,7 @@
   width: 157px;
   padding: 0;
   background-color: #212121;
-  color: #FCF5E5;
+  color: #fcf5e5;
   height: 52px;
   border-radius: 8px;
   display: flex;
@@ -134,18 +134,16 @@
     padding-top: 20px;
   }
 
-  .profile__avatar-btn{
+  .profile__avatar-btn {
     visibility: visible;
     height: 80px;
     width: 80px;
   }
 
   .profile__avatar-btn::after {
-  content: "";
-  opacity: 1;
+    content: "";
+    opacity: 1;
   }
-
-
 
   .profile__edit-btn {
     margin-bottom: 2px;

@@ -10,7 +10,9 @@
   justify-content: center;
   align-items: center;
   opacity: 0;
-  transition: opacity 0.3s ease, visibility 0.3s ease;
+  transition:
+    opacity 0.3s ease,
+    visibility 0.3s ease;
 }
 
 .modal_type_preview {
@@ -60,7 +62,7 @@
   background-image: url(../images/close-icon.svg);
   background-size: contain;
   background-repeat: no-repeat;
-  background-position:center;
+  background-position: center;
 }
 
 .modal__close-btn_type_preview:hover {
@@ -69,7 +71,7 @@
 
 .modal__title {
   margin: 0 0 32px;
-  font-family: 'Poppins', Arial, sans-serif;
+  font-family: "Poppins", Arial, sans-serif;
   font-weight: 500;
   font-size: 32px;
   line-height: 1;
@@ -108,9 +110,9 @@
 }
 
 .modal__label {
-  font-family: 'Poppins', Arial, sans-serif;
+  font-family: "Poppins", Arial, sans-serif;
   font-size: 16px;
-  color: #212121B2;
+  color: #212121b2;
   opacity: 0.7;
   font-weight: 500;
   line-height: 110%;
@@ -131,7 +133,7 @@
   display: block;
   margin-top: 8px;
   color: #ff0000b2;
-  font-family: 'Poppins', Arial, sans-serif;
+  font-family: "Poppins", Arial, sans-serif;
   font-weight: 500;
   font-size: 16px;
 }
@@ -143,7 +145,7 @@
   color: #fff;
   border: none;
   border-radius: 8px;
-  font-family: 'Poppins', Arial, sans-serif;
+  font-family: "Poppins", Arial, sans-serif;
   font-weight: 500;
   font-size: 16px;
   cursor: pointer;
@@ -170,7 +172,7 @@
 
 .modal__caption {
   color: #fff;
-  font-family: 'Poppins', Arial, sans-serif;
+  font-family: "Poppins", Arial, sans-serif;
   font-size: 20px;
   font-weight: 500;
   border-radius: 8px;
@@ -182,19 +184,19 @@
 }
 
 .modal__delete-btn {
-background-color: #ff6565;
-color: #212121;
-height: 52px;
-width: 156px;
-border-radius: 8px;
+  background-color: #ff6565;
+  color: #212121;
+  height: 52px;
+  width: 156px;
+  border-radius: 8px;
 }
 
 .modal__cancel-btn {
-border: 1px solid #212121;
-color:#212121;
-height: 52px;
-width: 156px;
-border-radius: 8px;
+  border: 1px solid #212121;
+  color: #212121;
+  height: 52px;
+  width: 156px;
+  border-radius: 8px;
 }
 
 @media screen and (max-width: 480px) {
@@ -213,10 +215,10 @@ border-radius: 8px;
   }
 
   #delete-modal .modal__close-btn {
-  position: absolute;
-  top: -55px;
-  right: -5px;
-}
+    position: absolute;
+    top: -55px;
+    right: -5px;
+  }
 
   .modal__submit-btn {
     max-width: none;
