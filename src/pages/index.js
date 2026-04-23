@@ -169,7 +169,7 @@ function getCardElement(data) {
   cardTitleEl.textContent = data.name;
 
 
-likeButton.addEventListener("click", () => {
+cardLikeBtnEl.addEventListener("click", () => {
   const isCurrentlyLiked = cardLikeBtnEl.classList.contains('cardLikeBtnEl');
 
   api.changeLikeStatus(data._id, isCurrentlyLiked)
